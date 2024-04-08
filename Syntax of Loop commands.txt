@@ -7,12 +7,31 @@ done
 Example: 
 i=6
 
-while [ $i -gt 5 ]
+while [ $i -gt 5 ];
 do
-echo "$i"
+echo "$i";
 break;
 
 done
 
 Output:
 6
+
+
+#Syntax of for loop:
+#Variable name is the variable we mention in do section
+
+for <Variable name> in <list of values>;
+do <any command> $<Variable name>;
+done; 
+
+
+Example:
+a=fruit
+for i in $a;
+do
+echo "Mango is a $i";
+done 
+
+Output:
+Mango is a fruit
