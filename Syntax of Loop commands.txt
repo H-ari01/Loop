@@ -1,0 +1,18 @@
+#Syntax of while-do loop:
+
+while [ condition ]; 
+do (any commands/action); 
+done 
+
+Example: 
+i=6
+
+while [ $i -gt 5 ]
+do
+echo "$i"
+break;
+
+done
+
+Output:
+6
