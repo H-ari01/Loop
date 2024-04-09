@@ -1,0 +1,11 @@
+Create a shell script to print the HTTP error code of guvi.in & print, the success/failure message based on the error code response
+
+
+curl -w %{http_code} guvi.in  #Curl command used to get httpcode of guvi.in
+echo "$http_code"
+if [ "$http_code" == 200 ];
+then 
+echo "success";
+else 
+echo "failure";
+fi
